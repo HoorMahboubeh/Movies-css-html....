@@ -1,0 +1,1825 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   
+}
+
+.menu{
+    line-height: 50px;
+    color: white;
+    position: absolute;
+    left: 416px;
+    top: -1px;
+    z-index: 10;
+  
+
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 20px;
+
+    
+}
+.menu ul li :hover{
+    color: red;
+}
+
+.shade{
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    width: 1347px;
+    height: 73px;
+    z-index: 3;
+}
+.main-box{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+
+
+}
+
+.main-box .sidebar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    background: rgba(0, 0, 0, 0.541);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.411);
+
+}
+.main-box{
+    width: 30%;
+}
+.sidebar-menu .side-menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+
+}
+
+.sidebar-menu .side-menu li{
+    margin-top: 6px;
+    padding: 15px  20px;
+    transition: all 0.3s linear;
+
+
+
+}
+
+.sidebar-menu .side-menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.sidebar-menu .side-menu li:hover{
+    border-left: 3px solid red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.596);
+}
+
+
+
+
+ .sidebar-menu
+ .social-media {
+    color: white;
+    transition: all 0.2s linear;
+    font-size: 23px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    top: 518px;
+ }
+
+.social-media a{
+    padding: 2px;
+    color: red;
+    opacity: 0.6;
+}
+
+.social-media a:hover{
+    opacity: 1;
+    color: white;
+}
+
+#check{
+    display: none;
+
+}
+
+.main-box .btn-one ion-icon {
+    color: red;
+    font-size: 35px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    line-height:60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+ .sidebar-menu .btn-two ion-icon {
+    position: absolute;
+    left: 16pc;
+    top: 20px;
+    bottom: 20px;
+    transform: translate(-50%);
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+    list-style: 60px;
+
+}
+
+.btn-one ion-icon:hover{
+    font-size: 29px;
+
+}
+.btn-two ion-icon:hover{
+    font-size: 24px;
+
+}
+
+#check:checked ~ .sidebar-menu{
+    left: 0px;
+}
+
+#check:checked ~ .btn-one ion-icon{
+    opacity: 0;
+}
+#check:checked ~ .sidebar-menu .btn-two ion-icon{
+    opacity: 1;
+}
+
+.main{
+    position: absolute;
+    top: 40px;
+    left: 74pc;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+
+
+}
+
+input{
+    border: 3px solid rgba(255, 0, 0, 0.199);
+    height: 35px;
+    width:300px ;
+    border-radius: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.164);
+    color: white;
+
+
+}
+
+.btn{
+    position: absolute;
+    left: 288px;
+    top: 6px;
+    font-size: 25px;
+    color: red;
+    transition: all 0.7s linear;
+}
+
+.btn a{
+    color: red;
+}
+
+.carousel-container{
+    margin: auto;
+   overflow: hidden;
+   z-index: 5;
+   position: relative;
+   top: -656px;
+   overflow: hidden;
+   width: 1000px;
+   
+}
+
+.carousel-slide{
+    display: flex;
+   
+}
+
+.carousel-container .carousel-slide img{
+    width:800%;
+    height: 500%;
+    background-size: 50px;
+
+}
+
+.silder{
+    width: 1342px;
+    height: 775px;
+    background: url(1.png); background-repeat: no-repeat;
+    margin: 100px auto;
+    animation: slide 80s  infinite ;
+    position: relative;
+    top: -721px;
+
+}
+@keyframes slide {
+    10%{
+        background: url(2.png);
+        background-repeat: no-repeat;
+    }
+    20%{
+        background: url(3.png);
+        background-repeat: no-repeat;
+    }
+    30%{
+        background: url(4.png);
+        background-repeat: no-repeat;
+    }
+    40%{
+        background: url(5.png);
+        background-repeat: no-repeat;
+    }
+    50%{
+        background: url(6.png);
+        background-repeat: no-repeat;
+    }
+    60%{
+        background: url(7.png);
+        background-repeat: no-repeat;
+    }
+    70%{
+        background: url(8.png);
+        background-repeat: no-repeat;
+    }
+    80%{
+        background: url(9.png);
+        background-repeat: no-repeat;
+    }
+    90%{
+        background: url(10.png);
+        background-repeat: no-repeat;
+    }
+    85%{
+        background: url(12.png);
+        background-repeat: no-repeat;
+    }
+    100%{
+        background: url(11.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.card{
+    position: absolute;
+    top: 335%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card .poster{
+    position: relative;
+    overflow: hidden;
+}
+
+.card .poster:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card:hover .poster:before{
+    bottom: 0;
+
+}
+.card .poster img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card:hover .poster img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card:hover .details{
+    bottom: 0;
+
+}
+.details h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist h2 span{
+    font-size: 14px;
+}
+.rating{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating span{
+    color: white;
+}
+
+.tags{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+.tags span.fantasy{
+    background: orange;
+}
+.tags span.romance{
+    background: olivedrab;
+}
+.info{
+    color: blanchedalmond;
+}
+.info p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+.card2{
+    position: absolute;
+    top: 335%;
+    left: 39%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card2 .poster2{
+    position: relative;
+    overflow: hidden;
+}
+
+.card2 .poster2:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card2:hover .poster2:before{
+    bottom: 0;
+
+}
+.card2 .poster2 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card2:hover .poster2 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details2{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card2:hover .details2{
+    bottom: 0;
+
+}
+.details2 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist2 h2 span{
+    font-size: 14px;
+}
+.rating2{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating2 span{
+    color: white;
+}
+
+.tags2{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags2 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+.tags2 span.fantasy{
+    background: orange;
+}
+.tags2 span.adventure{
+    background: olivedrab;
+}
+.tags2 span.family{
+    background: rgb(35, 142, 110);
+}
+.info2{
+    color: blanchedalmond;
+}
+.info2 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+
+.card3{
+    position: absolute;
+    top: 335%;
+    left:62%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card3 .poster3{
+    position: relative;
+    overflow: hidden;
+}
+
+.card3 .poster3:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card3:hover .poster3:before{
+    bottom: 0;
+
+}
+.card3 .poster3 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card3:hover .poster3 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details3{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card3:hover .details3{
+    bottom: 0;
+
+}
+.details3 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist3 h2 span{
+    font-size: 14px;
+}
+.rating3{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating3 span{
+    color: white;
+}
+
+.tags3{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags3 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags3 span.drama{
+    background: olivedrab;
+}
+.tags3 span.romance{
+    background: rgb(35, 142, 110);
+}
+.info3{
+    color: blanchedalmond;
+}
+.info3 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+.card4{
+    position: absolute;
+    top: 335%;
+    left:85%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card4 .poster4{
+    position: relative;
+    overflow: hidden;
+}
+
+.card4 .poster4:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card4:hover .poster4:before{
+    bottom: 0;
+
+}
+.card4 .poster4 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card4:hover .poster4 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details4{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card4:hover .details4{
+    bottom: 0;
+
+}
+.details4 h2 {
+    color: blanchedalmond;
+    font-size: 17px;
+}
+.datalist4 h2 span{
+    font-size: 14px;
+}
+.rating4{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating4 span{
+    color: white;
+}
+
+.tags4{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags4 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags4 span.comedy{
+    background: olivedrab;
+}
+.tags4 span.adventure{
+    background: rgb(35, 142, 110);
+}
+.tags4 span.crime{
+    background: orange;
+}
+.info4{
+    color: blanchedalmond;
+}
+.info4 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+.card5{
+    position: absolute;
+    top: 432%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card5 .poster5{
+    position: relative;
+    overflow: hidden;
+}
+
+.card5 .poster5:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card5:hover .poster5:before{
+    bottom: 0;
+
+}
+.card5 .poster5 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card5:hover .poster5 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details5{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card5:hover .details5{
+    bottom: 0;
+
+}
+.details5 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist5 h2 span{
+    font-size: 14px;
+}
+.rating5{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating5 span{
+    color: white;
+}
+
+.tags5{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags5 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags5 span.action{
+    background: olivedrab;
+}
+.tags5 span.thriller{
+    background: rgb(35, 142, 110);
+}
+.tags5 span.crime{
+    background: orange;
+}
+.info5{
+    color: blanchedalmond;
+}
+.info5 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+.card6{
+    position: absolute;
+    top: 432%;
+    left: 39%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card6 .poster6{
+    position: relative;
+    overflow: hidden;
+}
+
+.card6 .poster6:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card6:hover .poster6:before{
+    bottom: 0;
+
+}
+.card6 .poster6 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card6:hover .poster6 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details6{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card6:hover .details6{
+    bottom: 0;
+
+}
+.details6 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist6 h2 span{
+    font-size: 14px;
+}
+.rating6{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating6 span{
+    color: white;
+}
+
+.tags6{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags6 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags6 span.action{
+    background: olivedrab;
+}
+.tags6 span.thriller{
+    background: rgb(35, 142, 110);
+}
+
+.info6{
+    color: blanchedalmond;
+}
+.info6 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+.card7{
+    position: absolute;
+    top: 432%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card7 .poster7{
+    position: relative;
+    overflow: hidden;
+}
+
+.card7 .poster7:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card7:hover .poster7:before{
+    bottom: 0;
+
+}
+.card7 .poster7 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card7:hover .poster7 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details7{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card7:hover .details7{
+    bottom: 0;
+
+}
+.details7 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist7 h2 span{
+    font-size: 14px;
+}
+.rating7{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating7 span{
+    color: white;
+}
+
+.tags7{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags7 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags7 span.drama{
+    background: olivedrab;
+}
+.tags7 span.romance{
+    background: rgb(35, 142, 110);
+}
+
+.info7{
+    color: blanchedalmond;
+}
+.info7 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+.card8{
+    position: absolute;
+    top: 432%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card8 .poster8{
+    position: relative;
+    overflow: hidden;
+}
+
+.card8 .poster8:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card8:hover .poster8:before{
+    bottom: 0;
+
+}
+.card8 .poster8 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card8:hover .poster8 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details8{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card8:hover .details8{
+    bottom: 0;
+
+}
+.details8 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist8 h2 span{
+    font-size: 14px;
+}
+.rating8{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating8 span{
+    color: white;
+}
+
+.tags8{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags8 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags8 span.drama{
+    background: olivedrab;
+}
+
+
+.info8{
+    color: blanchedalmond;
+}
+.info8 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+
+.card9{
+    position: absolute;
+    top: 526%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card9 .poster9{
+    position: relative;
+    overflow: hidden;
+}
+
+.card9 .poster9:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card9:hover .poster9:before{
+    bottom: 0;
+
+}
+.card9 .poster9 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card9:hover .poster9 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details9{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card9:hover .details9{
+    bottom: 0;
+
+}
+.details9 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.datalist9 h2 span{
+    font-size: 14px;
+}
+.rating9{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating9 span{
+    color: white;
+}
+
+.tags9{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags9 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags9 span.romance{
+    background: olivedrab;
+}
+.tags9 span.crime{
+    background: rgb(35, 142, 110);
+}
+.tags9 span.sci-fi{
+    background: orange;
+}
+
+
+.info9{
+    color: blanchedalmond;
+}
+.info9 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+.card10{
+    position: absolute;
+    top: 526%;
+    left: 39%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card10 .poster10{
+    position: relative;
+    overflow: hidden;
+}
+
+.card10 .poster10:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card10:hover .poster10:before{
+    bottom: 0;
+
+}
+.card10 .poster10 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card10:hover .poster10 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details10{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card10:hover .details10{
+    bottom: 0;
+
+}
+.details10 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.detalist10 h2 span{
+    font-size: 11px;
+}
+.rating10{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating10 span{
+    color: white;
+}
+
+.tags10{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags10 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags10 span.action{
+    background: olivedrab;
+}
+.tags10 span.crime{
+    background: rgb(35, 142, 110);
+}
+
+
+.info10{
+    color: blanchedalmond;
+}
+.info10 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+.card11{
+    position: absolute;
+    top: 526%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card11 .poster11{
+    position: relative;
+    overflow: hidden;
+}
+
+.card11 .poster11:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card11:hover .poster11:before{
+    bottom: 0;
+
+}
+.card11 .poster11 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card11:hover .poster11 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details11{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card11:hover .details11{
+    bottom: 0;
+
+}
+.details11 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.detalist11 h2 span{
+    font-size: 11px;
+}
+.rating11{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating11 span{
+    color: white;
+}
+
+.tags11{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags11 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags11 span.horror{
+    background: olivedrab;
+}
+.tags11 span.mystery{
+    background: rgb(35, 142, 110);
+}
+.tags11 span.thriller{
+    background:orange;
+}
+
+
+.info11{
+    color: blanchedalmond;
+}
+.info11 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+.card12{
+    position: absolute;
+    top: 526%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card12 .poster12{
+    position: relative;
+    overflow: hidden;
+}
+
+.card12 .poster12:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card12:hover .poster12:before{
+    bottom: 0;
+
+}
+.card12 .poster12 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.card12:hover .poster12 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details12{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card12:hover .details12{
+    bottom: 0;
+
+}
+.details12 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.detalist12 h2 span{
+    font-size: 11px;
+}
+.rating12{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating12 span{
+    color: white;
+}
+
+.tags12{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags12 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags12 span.horror{
+    background: olivedrab;
+}
+.tags12 span.mystery{
+    background: rgb(35, 142, 110);
+}
+.tags12 span.drama{
+    background:orange;
+}
+
+
+.info12{
+    color: blanchedalmond;
+}
+.info12 p{
+    margin: 15px 0 10px;
+
+}
+
+
+
+
+
+
+/* new movies */
+
+.h1{
+    position: relative;
+    font-size: 40px;
+    left: 509px;
+    color: brown;
+    top: 900px;
+    width: 32%;
+
+}
+.h1:hover{
+    color: silver;
+}
+
+
+.card13{
+    position: absolute;
+    top: 640%;
+    left: 28%;
+    width: 44%;
+    transform: translate(-50%,-50%);
+    height: 450%;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+
+}
+
+.card13 .poster13{
+    position: relative;
+    overflow: hidden;
+}
+
+.card13 .poster13:before{
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.932) 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+.card13:hover .poster13:before{
+    bottom: 0;
+
+}
+.card13 .poster13 img{
+    transition: 0.5s;
+    position: relative;
+    width: 100%;
+    
+}
+.card13:hover .poster13 img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.details13{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height:95%;
+    bottom: -182px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s ;
+    z-index: 2;
+}
+.card13:hover .details13{
+    bottom: 0;
+
+}
+.details13 h2 {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.detalist13 h2 span{
+    font-size: 11px;
+}
+.rating13{
+    font-size: 30px;
+    color: yellow;
+   
+}
+
+.rating13 span{
+    color: white;
+}
+
+.run{
+    color: silver;
+    position: relative;
+    left: 50%;
+    font-size: 519%;
+    top:-8%;
+}
+.run h2{
+    position: absolute;
+    top: 70px;
+    left: -4px;
+    color: red;
+}
+.run img{
+    width: 67px;
+    position: absolute;
+    left: 120px;
+    top: 6px;
+}
+.run img:hover{
+    color: red;
+}
+.run a{
+    color: silver;
+}
+
+.run a:hover{
+    color: red;
+}
+.tags13{
+    color:blanchedalmond;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags13 span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+
+.tags13 span.action{
+    background: olivedrab;
+}
+.tags13 span.adventure{
+    background: rgb(35, 142, 110);
+}
+.tags13 span.fantasy{
+    background:orange;
+}
+
+
+.info13{
+    color: blanchedalmond;
+}
+.info13 p{
+    margin: 15px 0 10px;
+
+}
+
+
+.videoplayer{
+    width: 107%;
+    position: absolute;
+    left: 0%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+.videoplayer video{
+    width: 95%;
+    position: relative;
+    left: 50%;
+    top: -500px;
+}
+
+
+video:focus{
+    outline: none;
+}
+
+.run .play-btn{
+    transform: translate(-50% , -50%);
+    cursor: pointer;
+    position: relative;
+    left: 60px;
+    top: 25px;
+
+}
+.run  .play-btn:hover{
+    color: red;
+}
+
+.close{
+    position: absolute;
+    top: -192%;
+    right: -200px;
+    width: 30px;
+    font-size: 23px;
+}
+
+

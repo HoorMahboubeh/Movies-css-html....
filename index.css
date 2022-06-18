@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5)url(20493501.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.select{
+    color: white;
+    width: 92px;
+    height: 47px;
+    font-size: 16px;
+    font-family: cursive;
+    position: relative;
+    left: 68pc;
+    top: 25px;
+    background-color: rgba(255, 0, 0, 0.384);
+
+}
+.select:hover{
+    background-color: red;
+}
+
+.button{
+    background-color: rgba(255, 0, 0, 0.589);
+    font-family: cursive;
+    width: 99px;
+    height: 48px;
+    font-size: 20px;
+    position: absolute;
+    left: 75pc;
+    top: 25px;
+    color: white;
+}
+.button:hover{
+    background-color: red;
+}
+
+.watch-now{
+    position: absolute;
+    top: 20pc;
+    left: 35pc;
+    width: 275px;
+    height: 89px;
+    font-size: 30px;
+    font-family: cursive;
+    background-color: rgba(255, 0, 0, 0.363);
+    color: white;
+}
+
+.watch-now:hover{
+    background-color: red;
+}
+
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    
+
+}
+.Rating-wrapper{
+    direction: rtl;
+    
+}
+.Rating-wrapper input{
+    display: none;
+}
+.Rating-wrapper label{
+    padding: 43px;
+    width: 130px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Rating-wrapper label:before{
+    content: ' \272F';
+    position: absolute;
+    font-size: 90px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color: white;
+
+
+}
+.Rating-wrapper label:after{
+    content: ' \272F';
+    position: absolute;
+    font-size: 90px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color: yellow;
+    opacity: 0;
+
+
+}
+.Rating-wrapper label:hover:after,
+.Rating-wrapper label:hover ~ label:after,
+.Rating-wrapper input:checked ~ label:after {
+    opacity: 1;
+}

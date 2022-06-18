@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0,0.5) url(10915293.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.form{
+    width: 250px;
+    height: 340px;
+    color: white;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 40px 25px;
+}
+
+.form h1{
+    width: 220px;
+    text-align: center;
+    padding-left: 11px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: skyblue;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    outline: none;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: silver;
+    font-family: cursive;
+}
+
+.btnn{
+    font-size: 18px;
+    padding: 10px 15px;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.btnn a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.btnn a:hover{
+    color: rgba(255, 0, 0, 0.473);
+}
+
+.form .link{
+    font-family: cursive;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: -14px;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: red;
+}
+
+.link a:hover{
+color: rgba(255, 0, 0, 0.473);
+}
+
+.icons{
+    position: absolute;
+    left: 67px;
+    font-size: 25px;
+    top: 371px;
+}
+
+.icons a{
+    padding: 5px;
+    color: white;
+}
+
+.icons a:hover{
+    color: rgba(255, 0, 0, 0.76);
+
+}
+
+.forget-password{
+    color: silver;
+    position: absolute;
+    top: 331px;
+    left: 35px;
+    font-family: cursive;
+    
+}
+
+
+
+.forget-password:hover{
+    color: rgba(255, 0, 0, 0.699);
+
+}
